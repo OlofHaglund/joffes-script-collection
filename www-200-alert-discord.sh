@@ -18,7 +18,7 @@ send_curl()
 if curl --silent --head https://mammaskallare.se | grep -q "200 OK"
 then
   echo -e "$(date '+%F')\tFOUND 200 OK"
-  $(send_curl)
 else
   echo -e "$(date '+%F')\tNO 200 OK FOUND"
+  $(send_curl)
 fi
